@@ -3,6 +3,6 @@
 Beschreibung
 
 Packliste für den Urlaub
-Es ist nur eine Seite auf der man seine Packliste schreiben kann, ändern,löschen und bestätigen kann.
+Es ist nur eine Seite auf der man seine Packliste schreiben, ändern,löschen und bestätigen kann.
 
-Wenn man etwas hinzufügt oder ändert, löscht. Soll das gespeichert sein. Sie werden direkt auf der Seite angezeigt. Es gibt mehrere Buttons um die Sachen zu ändern etc..
+Wenn man etwas hinzufügt, ändert oder löscht wird es gespeichert. Die Inhalte werden auf der Website untereinander angezeigt. Es gibt mehrere Buttons um die Sachen zu ändern etc..
