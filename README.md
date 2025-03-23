@@ -2,7 +2,7 @@
 
 Beschreibung
 
-Evtl. Notizfunktion. Hinzufügen/Ändern/Löschen
+Packliste für den Urlaub
+Es ist nur eine Seite auf der man seine Packliste schreiben kann, ändern,löschen und bestätigen kann.
 
-- Function 1
-- Function 2
+Wenn man etwas hinzufügt oder ändert, löscht. Soll das gespeichert sein. Sie werden direkt auf der Seite angezeigt. Es gibt mehrere Buttons um die Sachen zu ändern etc..
