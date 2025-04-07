@@ -1,9 +1,8 @@
-// Für jede Kategorie (div.category)
+// FUNKTIONALITÄT FÜR HINZUFÜGEN, BEARBEITEN, LÖSCHEN
 document.querySelectorAll('.category').forEach(category => {
     const input = category.querySelector('.new-item');
     const list = category.querySelector('.item-list');
   
-    // Neuen Eintrag hinzufügen
     input.addEventListener('keypress', function (e) {
       if (e.key === 'Enter' && this.value.trim() !== '') {
         const newText = this.value.trim();
@@ -21,16 +20,13 @@ document.querySelectorAll('.category').forEach(category => {
       }
     });
   
-    // Löschen und Bearbeiten
     list.addEventListener('click', function (e) {
       const target = e.target;
   
-      // Löschen
       if (target.classList.contains('delete')) {
         target.closest('li').remove();
       }
   
-      // Bearbeiten
       if (target.classList.contains('edit')) {
         const label = target.previousElementSibling;
         const newText = prompt("Eintrag bearbeiten:", label.textContent);
@@ -39,5 +35,20 @@ document.querySelectorAll('.category').forEach(category => {
         }
       }
     });
+  });
+  
+  // DARK/LIGHT MODE TOGGLE
+  const toggle = document.getElementById('mode-toggle');
+  const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+  const storedMode = localStorage.getItem('theme');
+  
+  document.body.classList.add(storedMode || (prefersDark ? 'dark' : 'light'));
+  toggle.checked = document.body.classList.contains('dark');
+  
+  toggle.addEventListener('change', () => {
+    const mode = toggle.checked ? 'dark' : 'light';
+    document.body.classList.remove('dark', 'light');
+    document.body.classList.add(mode);
+    localStorage.setItem('theme', mode);
   });
   
