@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Urlaubspackliste</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>🌴 Meine Urlaubspackliste</h1>
+    <p>Alles, was ich für den nächsten Trip brauche!</p>
+  </header>
+
+  <main>
+    <section class="packlist">
+
+      <!-- Kleidung -->
+      <div class="category">
+        <h2>Kleidung 👕</h2>
+        <ul class="item-list">
+          <li><input type="checkbox" id="shirt"><label for="shirt">T-Shirts</label><span class="icon edit">✏️</span><span class="icon delete">🗑️</span></li>
+          <li><input type="checkbox" id="pants"><label for="pants">Kurze Hosen</label><span class="icon edit">✏️</span><span class="icon delete">🗑️</span></li>
+        </ul>
+        <input class="new-item" type="text" placeholder="Neuer Eintrag...">
+      </div>
+
+      <!-- Technik -->
+      <div class="category">
+        <h2>Technik 💻</h2>
+        <ul class="item-list">
+          <li><input type="checkbox" id="charger"><label for="charger">Ladekabel</label><span class="icon edit">✏️</span><span class="icon delete">🗑️</span></li>
+          <li><input type="checkbox" id="headphones"><label for="headphones">Kopfhörer</label><span class="icon edit">✏️</span><span class="icon delete">🗑️</span></li>
+        </ul>
+        <input class="new-item" type="text" placeholder="Neuer Eintrag...">
+      </div>
+
+      <!-- Dokumente -->
+      <div class="category">
+        <h2>Dokumente 📄</h2>
+        <ul class="item-list">
+          <li><input type="checkbox" id="passport"><label for="passport">Reisepass</label><span class="icon edit">✏️</span><span class="icon delete">🗑️</span></li>
+          <li><input type="checkbox" id="insurance"><label for="insurance">Reiseversicherung</label><span class="icon edit">✏️</span><span class="icon delete">🗑️</span></li>
+        </ul>
+        <input class="new-item" type="text" placeholder="Neuer Eintrag...">
+      </div>
+
+      <!-- Sonstiges -->
+      <div class="category">
+        <h2>Sonstiges 🎒</h2>
+        <ul class="item-list">
+          <li><input type="checkbox" id="sunscreen"><label for="sunscreen">Sonnencreme</label><span class="icon edit">✏️</span><span class="icon delete">🗑️</span></li>
+          <li><input type="checkbox" id="book"><label for="book">Buch</label><span class="icon edit">✏️</span><span class="icon delete">🗑️</span></li>
+        </ul>
+        <input class="new-item" type="text" placeholder="Neuer Eintrag...">
+      </div>
+
+    </section>
+  </main>
+
+  <footer>
+    <p>Gute Reise! ✈️</p>
+    <textarea class="notes" placeholder="Notizen für den Urlaub..."></textarea>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
