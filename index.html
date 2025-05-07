@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+
   <header>
     <div class="header-top">
       <div class="logo">
@@ -24,55 +25,19 @@
   </header>
 
   <main>
-    <section class="packlist">
+    <section class="packlist"></section>
 
-      <!-- Kleidung -->
-      <div class="category">
-        <h2>Kleidung 👕</h2>
-        <ul class="item-list">
-          <li><input type="checkbox" id="shirt"><label for="shirt">T-Shirts</label><span class="icon edit">✏️</span><span class="icon delete">🗑️</span></li>
-          <li><input type="checkbox" id="pants"><label for="pants">Kurze Hosen</label><span class="icon edit">✏️</span><span class="icon delete">🗑️</span></li>
-        </ul>
-        <input class="new-item" type="text" placeholder="Neuer Eintrag...">
-      </div>
-
-      <!-- Technik -->
-      <div class="category">
-        <h2>Technik 💻</h2>
-        <ul class="item-list">
-          <li><input type="checkbox" id="charger"><label for="charger">Ladekabel</label><span class="icon edit">✏️</span><span class="icon delete">🗑️</span></li>
-          <li><input type="checkbox" id="headphones"><label for="headphones">Kopfhörer</label><span class="icon edit">✏️</span><span class="icon delete">🗑️</span></li>
-        </ul>
-        <input class="new-item" type="text" placeholder="Neuer Eintrag...">
-      </div>
-
-      <!-- Dokumente -->
-      <div class="category">
-        <h2>Dokumente 📄</h2>
-        <ul class="item-list">
-          <li><input type="checkbox" id="passport"><label for="passport">Reisepass</label><span class="icon edit">✏️</span><span class="icon delete">🗑️</span></li>
-          <li><input type="checkbox" id="insurance"><label for="insurance">Reiseversicherung</label><span class="icon edit">✏️</span><span class="icon delete">🗑️</span></li>
-        </ul>
-        <input class="new-item" type="text" placeholder="Neuer Eintrag...">
-      </div>
-
-      <!-- Sonstiges -->
-      <div class="category">
-        <h2>Sonstiges 🎒</h2>
-        <ul class="item-list">
-          <li><input type="checkbox" id="sunscreen"><label for="sunscreen">Sonnencreme</label><span class="icon edit">✏️</span><span class="icon delete">🗑️</span></li>
-          <li><input type="checkbox" id="book"><label for="book">Buch</label><span class="icon edit">✏️</span><span class="icon delete">🗑️</span></li>
-        </ul>
-        <input class="new-item" type="text" placeholder="Neuer Eintrag...">
-      </div>
-
-    </section>
+    <div class="new-category">
+      <input type="text" id="new-category-name" placeholder="Neue Kategorie hinzufügen...">
+      <button id="add-category">Kategorie hinzufügen</button>
+    </div>
   </main>
 
   <footer>
     <p>Gute Reise! ✈️</p>
     <hr class="divider">
-    <textarea class="notes" placeholder="Notizen für den Urlaub..."></textarea>
+    <textarea class="notes" class="notes" placeholder="Notizen für den Urlaub..."></textarea>
+    <button id="save-notes">📝 Notiz speichern</button>
   </footer>
 
   <script src="script.js"></script>

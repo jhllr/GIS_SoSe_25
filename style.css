@@ -70,6 +70,7 @@
     margin-bottom: 0.5rem;
   }
   
+  /* GRID */
   .packlist {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
@@ -96,6 +97,7 @@
     font-size: 1.3rem;
   }
   
+  /* LISTENELEMENTE */
   ul {
     list-style: none;
     margin-bottom: 1rem;
@@ -156,7 +158,7 @@
     box-shadow: 0 0 0 4px #99f6e4;
   }
   
-  /* FOOTER & NOTES */
+  /* FOOTER & NOTIZEN */
   footer {
     background-color: var(--card-bg);
     backdrop-filter: blur(6px);
@@ -164,13 +166,13 @@
     padding: 2rem;
     box-shadow: var(--shadow);
     text-align: center;
-    margin-top: 4rem; /* Abstand zur Packliste */
+    margin-top: 4rem;
   }
   
   footer p {
     font-weight: bold;
     color: var(--primary);
-    font-size: 1.6rem; /* größer gemacht */
+    font-size: 1.6rem;
     margin-bottom: 1.5rem;
   }
   
@@ -252,6 +254,7 @@
     border-radius: 50%;
   }
   
+  /* RESPONSIVE */
   @media (max-width: 600px) {
     h1 {
       font-size: 1.6rem;
@@ -262,3 +265,59 @@
     }
   }
   
+  /* ======================= */
+  /* NEUE BUTTON-STYLES     */
+  /* ======================= */
+  
+  button {
+    background-color: var(--primary);
+    color: white;
+    border: none;
+    padding: 0.6rem 1.2rem;
+    font-size: 1rem;
+    border-radius: var(--radius);
+    cursor: pointer;
+    transition: background-color var(--transition), transform var(--transition);
+    margin-top: 1rem;
+    box-shadow: var(--shadow);
+  }
+  
+  button:hover {
+    background-color: var(--accent);
+    transform: scale(1.03);
+  }
+  
+  .new-category {
+    margin-top: 3rem;
+    text-align: center;
+  }
+  
+  #new-category-name {
+    padding: 0.6rem 1rem;
+    font-size: 1rem;
+    border: 2px solid #ccc;
+    border-radius: var(--radius);
+    width: 300px;
+    max-width: 90%;
+    margin-bottom: 0.5rem;
+    transition: border var(--transition), box-shadow var(--transition);
+  }
+  
+  #new-category-name:focus {
+    border-color: var(--primary);
+    outline: none;
+    box-shadow: 0 0 0 4px #99f6e4;
+  }
+  
+  .edit-cat,
+.delete-cat {
+  font-size: 1rem;
+  margin-left: 0.5rem;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.edit-cat:hover,
+.delete-cat:hover {
+  transform: scale(1.2);
+}
