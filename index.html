@@ -1,45 +1,68 @@
-<!DOCTYPE html>
-<html lang="de">
+<!-- Alles mit ChatGPt -->
+<!DOCTYPE html> <!-- Der Dokumenttyp: HTML5 -->
+<html lang="de"> <!-- Die Seite ist auf Deutsch -->
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Urlaubspackliste</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8" /> <!-- Zeichencodierung: Umlaute & Sonderzeichen erlaubt -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/> <!-- Responsives Design auf mobilen Geräten -->
+  <title>Urlaubspackliste</title> <!-- Titel im Browser-Tab -->
+  <link rel="stylesheet" href="style.css" /> <!-- Verbindung zur CSS-Datei -->
 </head>
+
 <body>
 
+  <!-- ================= HEADER mit Logo, Titel und Darkmode-Schalter ================ -->
   <header>
-    <div class="header-top">
+    <div class="header-top"> <!-- Oberer Bereich: links Logo, rechts Darkmode-Switch -->
+      
+      <!-- LOGO -->
       <div class="logo">
-        🧳 <span>PackMe</span>
+        🧳 <span>PackMe</span> <!-- Text-Logo mit Emoji -->
       </div>
+
+      <!-- DARK/LIGHT-MODE Toggle-Schalter -->
       <div class="toggle-container">
         <label class="switch">
-          <input type="checkbox" id="mode-toggle">
-          <span class="slider round"></span>
+          <input type="checkbox" id="mode-toggle"> <!-- Umschaltfläche für Design-Modus -->
+          <span class="slider round"></span> <!-- Optische Darstellung des Schalters -->
         </label>
       </div>
     </div>
+
+    <!-- Haupttitel & Untertitel -->
     <h1>🌴 Meine Urlaubspackliste</h1>
     <p>Alles, was ich für den nächsten Trip brauche!</p>
   </header>
 
+  <!-- ================= HAUPTINHALT mit Packlisten & Kategorien ================= -->
   <main>
+
+    <!-- Hier wird die komplette Packliste dynamisch eingefügt (per JS) -->
     <section class="packlist"></section>
 
+    <!-- Kategorie hinzufügen (Eingabefeld + Button) -->
     <div class="new-category">
       <input type="text" id="new-category-name" placeholder="Neue Kategorie hinzufügen...">
       <button id="add-category">Kategorie hinzufügen</button>
     </div>
+
   </main>
 
+  <!-- ================= FOOTER mit Notizblock & Speicherbutton ================= -->
   <footer>
     <p>Gute Reise! ✈️</p>
+    
+    <!-- Trennlinie zwischen Inhalt und Notizen -->
     <hr class="divider">
-    <textarea class="notes" class="notes" placeholder="Notizen für den Urlaub..."></textarea>
+
+    <!-- Notizfeld für Urlaubserinnerungen -->
+    <textarea class="notes" placeholder="Notizen für den Urlaub..."></textarea>
+
+    <!-- Button zum Speichern der Notizen -->
     <button id="save-notes">📝 Notiz speichern</button>
   </footer>
 
-  <script src="script.js"></script>
+  <!-- ================= VERBINDUNG ZUM JAVASCRIPT ================= -->
+  <script src="script.js"></script> <!-- Aktiviert alle interaktiven Funktionen -->
 </body>
 </html>
